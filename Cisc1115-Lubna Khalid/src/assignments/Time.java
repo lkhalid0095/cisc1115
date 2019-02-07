@@ -5,10 +5,11 @@ package assignments;
  * Assignment 1
  * Date Due: 2/7/19
  * Date Submitted: 2/6/19 19:56:34
- * Description: The program uses arithmetic operators and variables to find out about time
- * and how it correlates with the 24 hour clock. 
+ * Description: Exercise 2-3.
+ * The program uses arithmetic operators and variables to find out about time and how it correlates with the 24 hour clock. 
  */
-public class Time {
+public class Time
+{
 
 	public static void main(String[] args)
 	{
@@ -25,15 +26,15 @@ public class Time {
 		double minSpent = (currPassed - secPassed)/60;
 		
 		
-			System.out.println("I started this exercise at " + startHour + ":"+ startMin + ":" +startSec+ ".");
-			System.out.println(secPassed + " seconds have passed since midnight.");
-			System.out.println( totalSec - secPassed + " seconds remain in the day.");
-			System.out.printf("%.2f", percentDay); 
+			System.out.println("I started this exercise at " + startHour + ":"+ startMin + ":" +startSec+ "."); //Q2
+			System.out.println(secPassed + " seconds have passed since midnight."); //Q3
+			System.out.println( totalSec - secPassed + " seconds remain in the day.");  //Q4
+			System.out.printf("%.2f", percentDay); //Q5
 			System.out.println("% of the day has passed.\n");
-			System.out.println("The current time is " + currHour + ":"+ currMin + ":" +currSec+ ".");
-			System.out.print("I spent about ");
+			System.out.println("The current time is " + currHour + ":"+ currMin + ":" +currSec+ "."); 
+			System.out.print("I spent about ");//Q6
 			System.out.printf("%.2f", minSpent);
-			System.out.println(" minutes doing this exercise.");
+			System.out.println(" minutes doing this exercise."); 
 			
 	}
 
