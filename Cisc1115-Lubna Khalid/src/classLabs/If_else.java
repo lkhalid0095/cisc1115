@@ -18,15 +18,21 @@ public class If_else {
 		System.out.println("Type in an integer");
 		int num = in.nextInt();
 		System.out.print("You typed " + num + ".");
+		// part a.
 		if(num > 5) {
 			System.out.println("Your integer is greater than 5. ");
 		}
-		if(num < 5) {
-			System.out.println("Your integer is smaller than 5. ");
-		}
 		else {
-			System.out.println("Your integer isn't greater than 5. Better luck next time!");
+			System.out.println("Your integer isn't greater than 5.");
 		}
+		//part b.
+		if(num > 5) {
+			System.out.println("Your integer is larger than 5.");
+		}
+		if(num < 5) {
+			System.out.println("Your integer is smaller than 5.");
+		}
+		
 
 	}
 
@@ -35,11 +41,13 @@ public class If_else {
  * Predictions: 
  * a. You typed 10. Your integer is greater than 5.
  * b. You typed 2. Your integer is smaller than 5.
- * c. You typed 5. Your integer isn't greater than 5. Better luck next time!
+ * c. You typed 5. Your integer isn't greater than 5.
  * 
  * OUTPUT: 
- * You typed 10. Your integer is greater than 5.
- * You typed 2. Your integer is smaller than 5.
- * You typed 5. Your integer isn't greater than 5. Better luck next time!
+ * You typed 10.Your integer is greater than 5. 
+ * Your integer is larger than 5.
+ * You typed 2.Your integer isn't greater than 5.
+ * Your integer is smaller than 5.
+ * You typed 5. Your integer isn't greater than 5. 
  */
 
