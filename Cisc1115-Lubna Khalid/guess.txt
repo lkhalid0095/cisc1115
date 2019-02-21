@@ -1,0 +1,3 @@
+Your guess is: 77
+The number I was thinking of is: 32
+You were off by: 45
