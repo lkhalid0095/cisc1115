@@ -1,7 +1,11 @@
-/* LUBNA KHALID
- * CISC 1115 - TY11
- */
 package classLabs;
+/*
+* Author: Lubna Khalid
+* CISC 1115 - TY11
+* Date Due: 1/31/19
+* Date Submitted: 1/31/19
+* Description: Lab 1.
+*/
 public class Variables {
 	
 
