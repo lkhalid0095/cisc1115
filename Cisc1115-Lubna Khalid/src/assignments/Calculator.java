@@ -7,7 +7,7 @@ package assignments;
  * Date Due: 2/26/19
  * Date Submitted: 2/26/19 00:26:22
  * Description: Exercise 4-3.
- * 
+ * calculator
  */
 public class Calculator {
 
