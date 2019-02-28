@@ -7,7 +7,7 @@ import java.util.Scanner;
 * CISC 1115 - TY11
 * Date Due: 2/21/19
 * Date Submitted: 2/21/19
-* Description: Lab 6.
+* Description: Lab 7.
 */
 public class Recall {
 	//the main method prints recall if the user types in the year between 1995 -1999 and 	

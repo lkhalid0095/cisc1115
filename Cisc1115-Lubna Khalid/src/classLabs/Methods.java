@@ -8,7 +8,7 @@ import java.util.Scanner;
 * CISC 1115 - TY11
 * Date Due: 2/14/19
 * Date Submitted: 2/14/19
-* Description: Lab 5.
+* Description: Lab 6.
 */
 public class Methods {
 	

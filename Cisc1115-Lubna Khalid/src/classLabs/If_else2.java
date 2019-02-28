@@ -6,7 +6,7 @@ import java.util.Scanner;
 * CISC 1115 - TY11
 * Date Due: 2/21/19
 * Date Submitted: 2/21/19
-* Description: Lab 8.
+* Description: Lab 9.
 */
 
 public class If_else2 {
