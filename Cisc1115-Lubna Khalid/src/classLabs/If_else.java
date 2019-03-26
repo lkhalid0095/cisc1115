@@ -32,6 +32,7 @@ public class If_else {
 		if(num < 5) {
 			System.out.println("Your integer is smaller than 5.");
 		}
+		in.close();
 		
 
 	}

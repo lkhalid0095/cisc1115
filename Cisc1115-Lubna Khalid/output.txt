@@ -1,0 +1,12 @@
+Status   Income    Tax      Message    
+married  10,400.00   579.60 BOO   
+single   11,340.00   570.60 BOO   
+single    8,500.00   425.00 BOO   
+married   5,400.00   324.00 BOO   
+single    2,400.00   120.00 BOO   
+married   8,400.00   453.60 BOO   
+single    9,340.00   420.30 BOO   
+married  40,400.00 3,549.60 YAY!  
+50.00% of the users are married.
+383.97 is the average tax paid by single users.
+The highest tax paid by anybody is 3549.60.

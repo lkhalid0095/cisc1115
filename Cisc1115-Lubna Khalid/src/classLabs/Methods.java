@@ -26,7 +26,7 @@ public class Methods {
 			 System.out.println("What is the price of this book?");
 			 price = in.nextInt();
 			 fiftyPercentOff(name,price);
-			
+			in.close();
 		
 
 	}
