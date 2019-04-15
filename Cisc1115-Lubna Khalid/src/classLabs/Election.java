@@ -7,7 +7,7 @@ import java.util.Scanner;
 * CISC 1115 - TY11
 * Date Due: 4/4/19
 * Date Submitted: 4/4/19
-* Description: Lab 21.
+* Description: Lab 22.
 */
 public class Election {
 	

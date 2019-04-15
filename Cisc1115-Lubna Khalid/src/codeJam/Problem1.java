@@ -19,11 +19,11 @@ public class Problem1 {
 		boolean contain = contains4(arr);
 		System.out.println(contain);
 		divTwo(arr,num);
-		long startTime = System.nanoTime();
-		//code
-		long endTime = System.nanoTime();
-		System.out.println("Took "+(endTime - startTime) + " ns"); 
-		in.close();
+//		long startTime = System.nanoTime();
+//		//code
+//		long endTime = System.nanoTime();
+//		System.out.println("Took "+(endTime - startTime) + " ns"); 
+//		in.close();
 
 	}
 
@@ -40,7 +40,6 @@ public class Problem1 {
 		}
 		
 	}
-
 
 
 	private static boolean contains4(int[] arr) {
