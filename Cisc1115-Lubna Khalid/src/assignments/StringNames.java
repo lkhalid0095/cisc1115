@@ -17,7 +17,7 @@ import java.util.Scanner;
 /* Potential Errors/questions: 
  * She said to print the row, she means it for every name?
  * The issue with size, she said it should contain 15 but asks for 5, that gives me an error.
- * How do I fix that? :(
+ * How do I fix that? :(  // FIXED!
  * The contains is case sensitive, does that matter? 
  * 
  */
@@ -35,7 +35,7 @@ public class StringNames {
   String first = "";
   String last = "";
   String dashName = "";
-  String[] lastNames = new String[SIZE];
+  String[] lastNames = new String[count];
   for(int i =0;i<count; i++) {
    first = names[i].substring(0, names[i].indexOf(" "));
    last = names[i].substring(names[i].indexOf(" ")+1);
@@ -45,28 +45,28 @@ public class StringNames {
    
   }
   System.out.println("\nThe list of the last names in the list are:");
-  printArray(lastNames);
+  printArray(lastNames,count);
   System.out.println("\nEnter a last name to see if it's in the list. ");
   String str = sc.next();
-  if(findLast(str,lastNames)) {
+  if(findLast(str,lastNames,count)) {
    System.out.println("We found a match in the list!");
   }else {
    System.out.println("Sorry, we didn't find a matching name in the list.");
   }
   System.out.println("\nThe list in alphabetical order is: ");
-  bubbleSort(lastNames);
-  printArray(lastNames);
+  bubbleSort(lastNames,count);
+  printArray(lastNames,count);
   sc.close();
  }
 
  // sorts array of last names in a non ascending order. (alphabetical order)
- private static void bubbleSort(String[] lastNames) {
+ private static void bubbleSort(String[] lastNames, int count) {
   int pass = 0;
   boolean swapped = false;
   do {
    pass++;
    swapped = false;
-   for (int pos = 0; pos < SIZE- pass; pos++)
+   for (int pos = 0; pos < count- pass; pos++)
    if (lastNames[pos].compareTo(lastNames[pos+1]) > 0) {
    String temp = lastNames[pos];
    lastNames[pos] = lastNames[pos+1];
@@ -77,8 +77,8 @@ public class StringNames {
  }
  
  // determines if last name is in the array.
- private static boolean findLast(String str, String[] lastNames) {
-  for(int i = 0;i<SIZE;i++) {
+ private static boolean findLast(String str, String[] lastNames, int count) {
+  for(int i = 0;i<count;i++) {
    if(lastNames[i].contains(str)) {
     return true;
    }
@@ -87,15 +87,15 @@ public class StringNames {
  }
 
  // prints array of last names
- private static void printArray(String[] lastNames) {
-  for(int i =0;i<SIZE;i++) {
+ private static void printArray(String[] lastNames, int count) {
+  for(int i =0;i<count;i++) {
    System.out.println(lastNames[i]);
   }
  }
 
  // prints row in the chart with "first last", "last,first","first--last"
  private static void printRow(String first, String last, String dashName) {
-  System.out.printf("%-10s %-11s\t%-10s,%-10s \t %s \n",first,last,first,last,dashName);
+  System.out.printf("%s %s\t%s, %s \t %s \n",first,last,last,first,dashName);
  }
 
  // prints first---last 
@@ -126,12 +126,12 @@ public class StringNames {
 }
 
 /** OUTPUT
- 	List of People
-Stephanie  Guerrero   	Stephanie ,Guerrero   	 Stephanie---Guerrero 
-Kaitlyn    Cao        	Kaitlyn   ,Cao        	 Kaitlyn---Cao 
-Jorge      Garcia     	Jorge     ,Garcia     	 Jorge---Garcia 
-Aarfa      Aftab      	Aarfa     ,Aftab      	 Aarfa---Aftab 
-Jane       Feng       	Jane      ,Feng       	 Jane---Feng 
+ 			List of People	
+Stephanie Guerrero	Stephanie,Guerrero 	 Stephanie---Guerrero 
+Kaitlyn Cao	Kaitlyn,Cao 	 Kaitlyn---Cao 
+Jorge Garcia	Jorge,Garcia 	 Jorge---Garcia 
+Aarfa Aftab	Aarfa,Aftab 	 Aarfa---Aftab 
+Jane Feng	Jane,Feng 	 Jane---Feng 
 
 The list of the last names in the list are:
 Guerrero
@@ -139,8 +139,9 @@ Cao
 Garcia
 Aftab
 Feng
+
 Enter a last name to see if it's in the list. 
-fagn
+Feds
 Sorry, we didn't find a matching name in the list.
 
 The list in alphabetical order is: 
