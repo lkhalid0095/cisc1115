@@ -51,19 +51,27 @@ public class BubbleSort {
 
 }
 /** LAB ANSWERS: 
- * 1a. If we omitted line 38 then it would just sort
- * the first element in the array, and then never 
- * execute the while loop.
+ * 1a. If we omitted swapped = true then it would just sort
+ * the first element in the array that's greater than the next 
+ * element, and then never execute the while loop for the whole 
+ * array.
  * b. Nothing changes, it means the same thing.
- * c. you're not changing the index of the array but
- * just adding to the element at the same position.
+ * c. You're not changing the index of the array but
+ * just adding to the element at the same position. Since the first
+ * element is never going be greater than it self nothing changes.
  * d. Since you don't have a place holder you aren't 
  * swapping but just assigning num[pos] to 
  * num[pos+1] so at the end both end up with the same values.
+ * **the lowest number is taken -12, and then all numbers up to that
+ * number are just going to be -12, and everything after that is 0.
  * e. By not initializing it to false we risk our arrays that 
  * are already half sorted to not be completely sorted 
  * because it never goes through the whole array.
+ * ** It doesn't compile, gives a an outofboundsException (killed Jack)
+ * because since we never actually make swapped false, the while
+ * loop just keeps going on. 
  * f. If we add an else statement than once that else 
  * statement has been executed than it would leave the loop,
- * never truly going through the whole array. 
+ * never truly going through the whole array. So if the array is not 
+ * fully sorted except on thing it wouldn't sort the array right.
  */

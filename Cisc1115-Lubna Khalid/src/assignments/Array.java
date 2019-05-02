@@ -7,7 +7,7 @@ import java.util.Scanner;
  * Assignment 8
  * Date Due: 4/9/19
  * Date Submitted: 4/11/19 02:15:23
- * Description:
+ * Description: Counts zeroes in arrays.
  * 
  */
 public class Array {
