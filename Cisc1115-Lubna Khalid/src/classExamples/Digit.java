@@ -11,8 +11,7 @@ public class Digit {
 		int numb = in.nextInt();
 		int countDig = 0;
 		int backNum = 0;
-		//System.out.println(numb);
-		
+	
 		do {
 			System.out.print(numb%10);
 			numb/= 10;

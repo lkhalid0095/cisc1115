@@ -9,21 +9,14 @@ import java.util.Scanner;
  * CISC 1115 - TY11
  * Assignment 9
  * Date Due: 5/1/19
- * Date Submitted: 5/7/19 02:15:23
+ * Date Submitted: 5/4/19 16:26:23
  * Description: Uses string methods create an alphabetical array of names.
  * Also checks if the certain last name is in the list.
  * 
  */
-/* Potential Errors/questions: 
- * She said to print the row, she means it for every name?
- * The issue with size, she said it should contain 15 but asks for 5, that gives me an error.
- * How do I fix that? :(  // FIXED!
- * The contains is case sensitive, does that matter? 
- * 
- */
- 
+
 public class StringNames {
- final static int SIZE = 15; //if i change the size to 15 it gives me an error? 
+ final static int SIZE = 15; 
  
  // prints name in three different ways, prints a list of names alphabetically
  public static void main(String[] args) throws Exception {
@@ -48,6 +41,7 @@ public class StringNames {
   printArray(lastNames,count);
   System.out.println("\nEnter a last name to see if it's in the list. ");
   String str = sc.next();
+  str = str.toLowerCase();
   if(findLast(str,lastNames,count)) {
    System.out.println("We found a match in the list!");
   }else {
@@ -78,12 +72,11 @@ public class StringNames {
  
  // determines if last name is in the array.
  private static boolean findLast(String str, String[] lastNames, int count) {
-  for(int i = 0;i<count;i++) {
-   if(lastNames[i].contains(str)) {
-    return true;
-   }
-  }
-  return false;
+  for(int i = 0;i<count;i++) { 
+	 if((lastNames[i].toLowerCase().contains(str))){
+			return true;
+		 }
+	  } return false;
  }
 
  // prints array of last names
@@ -126,12 +119,12 @@ public class StringNames {
 }
 
 /** OUTPUT
- 			List of People	
-Stephanie Guerrero	Stephanie,Guerrero 	 Stephanie---Guerrero 
-Kaitlyn Cao	Kaitlyn,Cao 	 Kaitlyn---Cao 
-Jorge Garcia	Jorge,Garcia 	 Jorge---Garcia 
-Aarfa Aftab	Aarfa,Aftab 	 Aarfa---Aftab 
-Jane Feng	Jane,Feng 	 Jane---Feng 
+ 					List of People	
+Stephanie Guerrero	Guerrero, Stephanie 	 Stephanie---Guerrero 
+Kaitlyn Cao	Cao, Kaitlyn 	 Kaitlyn---Cao 
+Jorge Garcia	Garcia, Jorge 	 Jorge---Garcia 
+Aarfa Aftab	Aftab, Aarfa 	 Aarfa---Aftab 
+Jane Feng	Feng, Jane 	 Jane---Feng 
 
 The list of the last names in the list are:
 Guerrero
@@ -141,7 +134,7 @@ Aftab
 Feng
 
 Enter a last name to see if it's in the list. 
-Feds
+feng
 Sorry, we didn't find a matching name in the list.
 
 The list in alphabetical order is: 

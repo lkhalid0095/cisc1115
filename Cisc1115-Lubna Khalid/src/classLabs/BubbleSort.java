@@ -23,28 +23,33 @@ public class BubbleSort {
 		int count = 0;
 		count = bubbleSort(numb,count,in);
 		in.close();
+		int d = 5;
+		int b = 3;
+		d = b;
+		System.out.println(d);
 		System.out.println(Arrays.toString(numb));
 	}
 
 	// bubble sort algorithm.
 	private static int bubbleSort(int[] numb, int count, Scanner in) {
 		int pass = 0;
-		while(in.hasNextInt() && count < n) {
-				numb[count] = in.nextInt();
-				count++;
-		}
+//		while(in.hasNextInt() && count < n) {
+//				numb[count] = in.nextInt();
+//				count++;
+//		}
 		boolean swapped = false;
 		do {
 			pass++;
 			swapped = false;
-			for (int pos = 0; pos < n - pass; pos++)
-			if (numb[pos] > numb[pos+1]) {
-			int temp = numb[pos];
-			numb[pos] = numb[pos+1];
-			numb[pos+1] = temp;
-			swapped = true;
+			for (int pos = 0; pos < n - pass; pos++) {
+				if (numb[pos] > numb[pos+1]) {
+					int temp = numb[pos];
+					numb[pos] = numb[pos+1];
+					numb[pos+1] = temp;
+					swapped = true;
+				}
 			}
-			} while(swapped == true);
+		} while(swapped == true);
 		return count;
 	}
 	
