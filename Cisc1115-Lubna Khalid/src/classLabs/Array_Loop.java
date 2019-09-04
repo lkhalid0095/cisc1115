@@ -1,7 +1,7 @@
 package classLabs;
 
 import java.util.Scanner;
-/*
+/*n
 * Author: Lubna Khalid
 * CISC 1115 - TY11
 * Date Due: 3/26/19
