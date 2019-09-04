@@ -47,7 +47,7 @@ public class StringNames {
   }else {
    System.out.println("Sorry, we didn't find a matching name in the list.");
   }
-  System.out.println("\nThe list in alphabetical order is: ");
+  System.out.println("\nThe list in the non-ascending order is: ");
   bubbleSort(lastNames,count);
   printArray(lastNames,count);
   sc.close();
@@ -61,7 +61,7 @@ public class StringNames {
    pass++;
    swapped = false;
    for (int pos = 0; pos < count- pass; pos++)
-   if (lastNames[pos].compareTo(lastNames[pos+1]) > 0) {
+   if (lastNames[pos].compareTo(lastNames[pos+1]) < 0) {
    String temp = lastNames[pos];
    lastNames[pos] = lastNames[pos+1];
    lastNames[pos+1] = temp;
@@ -135,7 +135,7 @@ Feng
 
 Enter a last name to see if it's in the list. 
 feng
-Sorry, we didn't find a matching name in the list.
+We found a match in the list!
 
 The list in alphabetical order is: 
 Aftab

@@ -33,10 +33,10 @@ public class BubbleSort {
 	// bubble sort algorithm.
 	private static int bubbleSort(int[] numb, int count, Scanner in) {
 		int pass = 0;
-//		while(in.hasNextInt() && count < n) {
-//				numb[count] = in.nextInt();
-//				count++;
-//		}
+		while(in.hasNextInt() && count < n) {
+				numb[count] = in.nextInt();
+				count++;
+		}
 		boolean swapped = false;
 		do {
 			pass++;
